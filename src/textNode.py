@@ -15,8 +15,9 @@ class TextNode:
         self.url = url
     
     def __eq__(self, other):
-        for k,v in self.items():
-            if k not in other or other[k] != v:
+        compare_dict = other.__dict__
+        for k,v in self.__dict__.items():
+            if compare_dict[k] != v:
                 return False
         return True
     

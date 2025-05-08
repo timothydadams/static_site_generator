@@ -24,12 +24,9 @@ class TestTextNode(unittest.TestCase):
 
 
     def test_invalid_nodeType(self):
-        #with self.assertRaises(ValueError):
         self.assertRaises(ValueError, TextNode, "Bad data", "span")
         self.assertRaises(ValueError, TextNode, "Bad data", "div")
         self.assertRaises(ValueError, TextNode, "Bad data", "h1")
-            #TextNode("Bad data", "span")
-            #TextNode("Another bad node", TextNode.SPAN)
         
 
 

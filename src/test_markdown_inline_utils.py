@@ -1,5 +1,5 @@
 import unittest
-from markdown_utils import (
+from markdown_inline_utils import (
     split_nodes_delimiter,
     extract_markdown_images,
     extract_markdown_links,
@@ -202,5 +202,3 @@ class TestTextToNodes(unittest.TestCase):
             node_list
         )
 
-if __name__ == "__main__":
-    unittest.main()
